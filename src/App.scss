@@ -1,0 +1,45 @@
+body{
+    font-family: verdana;
+    h1{
+        text-align: center;
+
+    }
+    p{
+        margin-top:15px;
+        text-align: center;
+    }
+}
+
+#container{
+    display: flexbox;
+    
+    //justify-content: space-between;
+}
+
+#monety{
+    display: flex;
+    //justify-content: space-between;
+}
+
+#grosze{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-right:1rem;
+}
+
+#zlotowki{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-right:1rem;
+}
+
+#banknoty{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: right;
+    margin-left: 5rem;
+    //justify-content: space-between;
+}
