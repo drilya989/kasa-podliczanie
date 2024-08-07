@@ -76,6 +76,7 @@ function App() {
       <div className='heading-cont'>
         <h1>Kalkulator do podliczenia gotówki w kasie</h1>
         <p>Podaj liczbę poszczególnych monet i banknotów w kasie</p>
+        <hr/>
       </div>
       <div id="container">
         <form onSubmit={submitForm}>
