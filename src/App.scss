@@ -1,45 +1,93 @@
-body{
-    font-family: verdana;
-    h1{
-        text-align: center;
-
+body {
+    font-family: Helvetica;
+    background-color: aliceblue;
+  
+    h1 {
+      text-align: center;
+      font-size: 30px;
     }
-    p{
-        margin-top:15px;
-        text-align: center;
+  
+    p {
+      margin-top: 25px;
+      text-align: center;
+      margin-bottom:40px;
     }
-}
-
-#container{
-    display: flexbox;
-    
-    //justify-content: space-between;
-}
-
-#monety{
-    display: flex;
-    //justify-content: space-between;
-}
-
-#grosze{
+  }
+  
+  #container {
     display: flex;
     flex-direction: column;
-    gap:10px;
-    margin-right:1rem;
-}
-
-#zlotowki{
+    align-items: center;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    gap:10px;
-    margin-right:1rem;
-}
-
-#banknoty{
+    align-items: center;
+  }
+  
+  #row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    width: 100%;
+  }
+  
+  #grosze,
+  #zlotowki,
+  #banknoty {
     display: flex;
     flex-direction: column;
-    gap:10px;
-    justify-content: right;
-    margin-left: 5rem;
-    //justify-content: space-between;
-}
+    gap: 9px;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+   
+   
+    h3{
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+  }
+  #grosze:hover,
+  #zlotowki:hover,
+  #banknoty:hover{
+    transform: translateY(-3px);
+  }
+
+
+
+  
+  button {
+    margin-top: 2rem;
+    border:none;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: rgb(161, 161, 239);
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius:5px;
+    width:6rem;
+    height:2.5rem;
+
+  }
+
+  button:hover{
+    background-color: rgb(147, 147, 233);
+  }
+  
+  #wynik {
+    margin-top: 1rem;
+    //background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .heading-cont{
+    margin: 10px;
+
+  }
